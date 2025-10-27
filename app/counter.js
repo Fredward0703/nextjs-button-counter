@@ -25,6 +25,11 @@ function Counter({initialCount = 0, initialStep =1}) {
         <button onClick={increase}>Increase</button>
         <button onClick={decrease}>Decrease</button>
         <button onClick={reset}>Reset</button>
+
+        <div style={{marginTop:"10px"}}>
+        <label>Step: </label>
+        <input type="number" value={step} onChange={(c) => setStep(Number(c.target.value))} />
+        </div>
         </>
     );
 };
