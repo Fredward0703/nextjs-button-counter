@@ -23,9 +23,11 @@ function Counter({initialCount = 0, initialStep =1}) {
         <div style={{border:"1px solid cyan", padding:"10px", margin:"10px"}}> 
             <p aria-live="polite">Count: {count}</p>
 
-             <button onClick={increase}>Increase</button>
-             <button onClick={decrease}>Decrease</button>
-            <button onClick={reset}>Reset</button>
+            <div style={{display:"flex", gap:"10px", marginTop:"10px"}}>
+            <button style={{color:"black", backgroundColor:"white"}} onClick={increase}>Increase</button>
+            <button style={{color:"black", backgroundColor:"white"}} onClick={decrease}>Decrease</button>
+            <button style={{color:"black", backgroundColor:"white"}} onClick={reset}>Reset</button>
+            </div>
 
             <div style={{marginTop:"10px"}}>
              <label>Step: </label>
