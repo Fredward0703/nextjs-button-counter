@@ -6,9 +6,9 @@ function ProjectCounter() {
     <>
     <h1>Project Counter</h1>
     <Counter />
-    <Counter initialCount={5} initialStep={2}></Counter>
+    <Counter initialCount={5} initialStep={2} />
     </>
   );
-};
+}
 
 export default ProjectCounter;

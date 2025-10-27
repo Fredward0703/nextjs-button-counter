@@ -20,17 +20,18 @@ function Counter({initialCount = 0, initialStep =1}) {
     }
 
     return(
-        <> 
-        <h2>Count: {count}</h2>
-        <button onClick={increase}>Increase</button>
-        <button onClick={decrease}>Decrease</button>
-        <button onClick={reset}>Reset</button>
+        <div style={{border:"1px solid cyan", padding:"10px", margin:"10px"}}> 
+            <p aria-live="polite">Count: {count}</p>
 
-        <div style={{marginTop:"10px"}}>
-        <label>Step: </label>
-        <input type="number" value={step} onChange={(c) => setStep(Number(c.target.value))} />
+             <button onClick={increase}>Increase</button>
+             <button onClick={decrease}>Decrease</button>
+            <button onClick={reset}>Reset</button>
+
+            <div style={{marginTop:"10px"}}>
+             <label>Step: </label>
+             <input type="number" value={step} onChange={(c) => setStep(Number(c.target.value))} />
+            </div>
         </div>
-        </>
     );
 };
 
