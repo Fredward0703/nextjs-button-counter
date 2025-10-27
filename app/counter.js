@@ -1,3 +1,4 @@
+'use client'
 import { useState } from "react";
 
 function Counter({initialCount = 0, initialStep =1}) {
@@ -22,7 +23,7 @@ function Counter({initialCount = 0, initialStep =1}) {
         <> 
         <h2>Count: {count}</h2>
         <button onClick={increase}>Increase</button>
-        <button onClick={decrease}>Dncrease</button>
+        <button onClick={decrease}>Decrease</button>
         <button onClick={reset}>Reset</button>
         </>
     );
